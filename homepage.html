@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mauridream Escape</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header>
+    <header class="topbar">
+  <div class="logo">MauriDream</div>
+  <div class="icons">
+    <i class="fas fa-user-circle"></i>
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+</header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+      <a href="hotel reservationpage.html" class="book-btn">Hotels</a>
+      <a href="activitiespage.html" class="book-btn">Activities</a>
+      <a href="flight.html" class="book-btn">Flight</a>
+      <a href="about us.html" class="book-btn">About us</a>
+      
+    </nav>
+  </header>
+
+
+<!-- Hero Banner -->
+<section class="hero-banner">
+  <img src="C:\Users\thebo\Desktop\amour\banner41.jpg" alt="Holiday Home">
+  <div class="caption">
+    <h2>Recharge in a holiday home</h2>
+    <p>All together, in a place that's just for you</p>
+    <button>Book yours</button>
+  </div>
+</section>
+
+<!-- Search Bar Section -->
+<section class="search-bar">
+  <form class="search-form" id="searchForm" novalidate>
+    <input type="text" id="destination" name="destination" placeholder="Where are you going?" />
+    
+    <input type="date" id="checkin" name="checkin" placeholder="Check-in date" />
+    <input type="date" id="checkout" name="checkout" placeholder="Check-out date" />
+    
+    <select id="guests" name="guests">
+      <option value="0" selected>Any number of guests</option>
+      <option value="1">1 guest</option>
+      <option value="2">2 guests</option>
+      <option value="4">4 guests</option>
+      <option value="6">6+ guests</option>
+    </select>
+    
+    <div class="search-buttons">
+      <button type="submit">Search</button>
+      <button type="button" id="clearSearch">Clear</button>
+    </div>
+  </form>
+</section>
+
+<!-- Search Results Container -->
+<div id="search-results" class="grid-container"></div>
+
+
+
+  <!-- Content Grid -->
+  <main>
+  <section class="grid-container">
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\voila1.jpg" alt="Voila Bagatelle" class="grid-image" />
+    <h3>Voila Bagatelle</h3>
+    <p><del>Rs 4,500</del></p>
+    <p style="color:red"><strong>Rs 3,200</strong></p>
+    <a href="voila.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\holiday-inn-1.jpg" alt="Holiday-inn" class="grid-image" />
+    <h3>Holiday-inn</h3>
+    <p><del>Rs 7,000</del></p>
+    <p style="color:red"><strong>Rs 5,400</strong></p>
+    <a href="holidayin.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\salt of palmar1.jpg" alt="Salt of Palmar" class="grid-image" />
+    <h3>Salt of Palmar</h3>
+    <p><del>Rs 19,999</del></p>
+    <p style="color:red"><strong>Rs 17,800</strong></p>
+    <a href="SALT of Palmar.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\luxgrandbaie1.jpg" alt="Lux Grand Baie" class="grid-image" />
+    <h3>Lux Grand Baie</h3>
+    <p><del>Rs 20,000</del></p>
+    <p style="color:red"><strong>18,900</strong></p>
+    <a href="Lux Grand Baie.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\la villa detente1.jpg" alt="La Villa Detente" class="grid-image" />
+    <h3>La Villa Detente</h3>
+    <p><del>Rs 6,000</del></p>
+    <p style="color:red"><strong>Rs 4,200</strong></p>
+    <a href="La villa detente.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\constance tekoma1.jpg" alt="Constance Tekoma" class="grid-image" />
+    <h3>Constance Tekoma</h3>
+    <p><del>Rs 22,900</del></p>
+    <p style="color:red"><strong>Rs 21,800</strong></p>
+    <a href="Constance Tekoma.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\c rodrigues mourouk1.jpg" alt="C Rodrigues Mourouk" class="grid-image" />
+    <h3>C Rodrigues Mourouk</h3>
+    <p><del>Rs 24,000</del></p>
+    <p style="color:red"><strong>Rs 22,100</strong></p>
+    <a href="C Rodrigues Mourouk.html" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="grid-item">
+    <img src="C:\Users\thebo\Desktop\amour\cottonbay1.jpg" alt="Cotton Bay" class="grid-image" />
+    <h3>Cotton Bay</h3>
+    <p><del>Rs 28,000</del></p>
+    <p style="color:red"><strong>Rs 26,400</strong></p>
+    <a href="Cotton Bay.html" class="book-btn">Book Now</a>
+  </div>
+</section>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <strong>INDUSTRIES OVERVIEW:</strong>
+        <ul>
+          <li>Hotels</li>
+          <li>Airlines</li>
+          <li>Activities</li>
+          <li>Deals</li>
+        </ul>
+      </div>
+      <div>
+        <strong>SUPPORT:</strong>
+        <ul>
+          <li>FAQs</li>
+          <li>Privacy and Policy</li>
+          <li>Terms and Conditions</li>
+        </ul>
+      </div>
+      <div>
+        <strong>About us/ Help:</strong>
+        <ul>
+          <li>About Mauridream Escape.com</li>
+          <li>Our Team</li>
+        </ul>
+      </div>
+      <div class="social">
+        <strong>CONNECT WITH US!</strong><br />
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/IATA_logo.svg/200px-IATA_logo.svg.png" alt="IATA" width="50"></div>
+      <div><a href="#">ACCREDITED AGENT</a></div>
+      <div>PRIVACY POLICY | COOKIE POLICY | JOIN US</div>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get form elements
+  const searchForm = document.getElementById('searchForm');
+  const resultsContainer = document.getElementById('search-results');
+
+  // Clear button functionality
+document.getElementById('clearSearch').addEventListener('click', function() {
+  // Reset form fields
+  document.getElementById('destination').value = '';
+  document.getElementById('checkin').value = '';
+  document.getElementById('checkout').value = '';
+  document.getElementById('guests').value = '0';
+  
+  // Clear search results
+  document.getElementById('search-results').innerHTML = '';
+  
+  // Reset any active filters (if you have them)
+  const categoryItems = document.querySelectorAll('.category-item');
+  categoryItems.forEach(item => item.classList.remove('active'));
+  document.querySelector('.category-item[data-category="all"]').classList.add('active');
+  
+  // Show all hotels again (if you have this functionality)
+  const gridItems = document.querySelectorAll('.grid-container .grid-item');
+  gridItems.forEach(item => item.style.display = 'block');
+});
+
+  const hotels = [
+  {
+    name: "Voila Bagatelle",
+    location: "Bagatelle",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 5,
+    page: "voila.html",
+  },
+  {
+    name: "The Garden Lodge",
+    location: "Perebere",
+    availableFrom: "2025-06-10",
+    availableTo: "2025-07-20",
+    rooms: 3,
+    page: "The Garden Lodge.html",
+  },
+  {
+    name: "Shanti Maurice Resort & Spa",
+    location: "Saint Felix",
+    availableFrom: "2025-06-05",
+    availableTo: "2025-08-01",
+    rooms: 7,
+    page: "shanti maurice.html",
+  },
+  {
+    name: "SALT of Palmar",
+    location: "Palmar",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-30",
+    rooms: 4,
+    page: "SALT of Palmar.html",
+  },
+  {
+    name: "Ocean's Creek Beach Hotel",
+    location: "Belle mare",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-15",
+    rooms: 6,
+    page: "Ocean Creek Beach Hotel.html",
+  },
+  {
+    name: "Mariposa",
+    location: "Tamarin",
+    availableFrom: "2025-06-15",
+    availableTo: "2025-08-15",
+    rooms: 3,
+    page: "Mariposa.html",
+  },
+  {
+    name: "LUX* Le Morne Resort",
+    location: "Le Morne",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 10,
+    page: "Lux le monde.html",
+  },
+  {
+    name: "LUX* Grand Baie Resort & Residences",
+    location: "Grand Baie",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 8,
+    page: "Lux Grand Baie.html",
+  },
+  {
+    name: "Le Palmiste Resort & Spa",
+    location: "Trou aux Biches",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 5,
+    page: "Le Palmiste Resort & Spa.html",
+  },
+  {
+    name: "Le Meridien Mauritius",
+    location: "Pointe aux Piments",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 6,
+    page: "Le Meridien Mauritius.html",
+  },
+  {
+    name: "La villa detente",
+    location: "rodrigues",
+    availableFrom: "2025-06-10",
+    availableTo: "2025-08-01",
+    rooms: 2,
+    page: "La villa detente.html",
+  },
+  {
+    name: "Holiday Inn Mauritius Mon Trésor by IHG",
+    location: "Plaine Magnien",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 4,
+    page: "holidayin.html",
+  },
+  {
+    name: "Cotton Bay Resort & Spa",
+    location: "Rodrigues",
+    availableFrom: "2025-06-05",
+    availableTo: "2025-07-25",
+    rooms: 6, 
+    page: "Cotton Bay.html",
+  },
+  {
+    name: "Coral Azur Beach Resort",
+    location: "Mont Choisy",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 5,
+    page: "Coral Azur Beach Resort.html",
+  },
+  {
+    name: "Constance Tekoma",
+    location: "Rodrigues",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-08-01",
+    rooms: 4,
+    page: "Constance Tekoma.html",
+  },
+  {
+    name: "Constance Belle Mare Plage",
+    location: "Belle Mare",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 7,
+    page: "Constance Belle Mare Plage.html",
+  },
+  {
+    name: "C Rodrigues Mourouk",
+    location: "Rodrigues",
+    availableFrom: "2025-06-15",
+    availableTo: "2025-07-30",
+    rooms: 3,
+    page: "C Rodrigues Mourouk.html",
+  },
+  {
+    name: "Auberge Seafever",
+    location: "Rogrigues",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-07-31",
+    rooms: 2,
+    page: "auberge Seafever.html",
+  },
+  {
+    name: "Anantara Iko Mauritius Resort & Villas",
+    location: "Blue Bay",
+    availableFrom: "2025-06-01",
+    availableTo: "2025-08-01",
+    rooms: 9,
+    page: "Anantara iko Mauritius Resort & Villas.html",
+  }
+];
+
+// Form submission handler
+  searchForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const destination = document.getElementById('destination').value.trim().toLowerCase();
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const guests = parseInt(document.getElementById('guests').value);
+    
+    // Filter hotels
+    const filteredHotels = hotels.filter(hotel => {
+      // Check destination match
+      if (destination && 
+          !hotel.name.toLowerCase().includes(destination) && 
+          !hotel.location.toLowerCase().includes(destination)) {
+        return false;
+      }
+      
+      // Check date availability
+      if (checkin && new Date(checkin) < new Date(hotel.availableFrom)) {
+        return false;
+      }
+      if (checkout && new Date(checkout) > new Date(hotel.availableTo)) {
+        return false;
+      }
+      
+      // Check room capacity
+      if (guests > 0 && hotel.rooms < guests) {
+        return false;
+      }
+      
+      return true;
+    });
+    
+    // Display results
+    displayResults(filteredHotels);
+  });
+  
+  // Function to display results
+  function displayResults(hotels) {
+    resultsContainer.innerHTML = '';
+    
+    if (hotels.length === 0) {
+      resultsContainer.innerHTML = `
+        <div class="no-results">
+          <h3>No hotels found</h3>
+          <p>Try adjusting your search criteria</p>
+        </div>
+      `;
+      return;
+    }
+    
+    hotels.forEach(hotel => {
+      const hotelCard = document.createElement('div');
+      hotelCard.className = 'grid-item';
+      hotelCard.innerHTML = `
+        <img src="${hotel.image}" alt="${hotel.name}" class="grid-image">
+        <h3>${hotel.name}</h3>
+        <p><strong>Location:</strong> ${hotel.location}</p>
+        <p><strong>Available:</strong> ${formatDate(hotel.availableFrom)} - ${formatDate(hotel.availableTo)}</p>
+        <p><strong>Price:</strong> Rs ${hotel.price}</p>
+        <a href="${hotel.page}" class="book-btn">Book Now</a>
+      `;
+      resultsContainer.appendChild(hotelCard);
+    });
+  }
+  
+  // Helper function to format dates
+  function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString('en-US', options);
+  }
+});
+</script>
+
+</body>
+</html>
